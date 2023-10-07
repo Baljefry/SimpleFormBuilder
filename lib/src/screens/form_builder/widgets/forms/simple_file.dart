@@ -76,7 +76,7 @@ class _SimpleFile extends StatelessWidget {
               Consumer<FormBuilderProvider>(
                 builder: (context, value, child) {
                   return TextButton(
-                    onPressed: () => fileUpload(
+                    onPressed: () { fileUpload(
                         context: context,
                         files: (files) {
                           value.setAnswer(
@@ -87,6 +87,11 @@ class _SimpleFile extends StatelessWidget {
                         }
                       
                                           ),
+                                   Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => this.widget));
+                    },
+                                   
+                                  },
                     child: Text(
                       "Upload",
                       style: TextStyle(
