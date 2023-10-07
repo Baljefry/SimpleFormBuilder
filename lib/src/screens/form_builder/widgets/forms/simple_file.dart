@@ -85,7 +85,7 @@ class _SimpleFile extends StatelessWidget {
                             index: index,
                           );
                         }
-                      );
+                      
                                           ),
                     child: Text(
                       "Upload",
