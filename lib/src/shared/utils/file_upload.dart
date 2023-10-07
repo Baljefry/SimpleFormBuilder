@@ -19,7 +19,7 @@ void fileUpload({
             onTap: () async {
               Navigator.of(context).pop();
               FilePickerResult? result =
-                  await FilePicker.platform.pickFiles(allowMultiple: true);
+                  await FilePicker.platform.pickFiles(allowMultiple: false);
 
               if (result != null) {
                 List<File> selectedFiles =
