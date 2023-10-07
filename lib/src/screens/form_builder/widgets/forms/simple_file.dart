@@ -84,7 +84,16 @@ class _SimpleFile extends StatelessWidget {
                             value: files,
                             index: index,
                           );
-                        }),
+                        }
+                      CircleAvatar(
+                            backgroundColor: Colors.green,
+                            radius: 15,
+                            child: Icon(
+                              Icons.check,
+                              color: Colors.white,
+                            ),
+                          )
+                    ),
                     child: Text(
                       "Upload",
                       style: TextStyle(
