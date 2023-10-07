@@ -76,22 +76,18 @@ class _SimpleFile extends StatelessWidget {
               Consumer<FormBuilderProvider>(
                 builder: (context, value, child) {
                   return TextButton(
-                    onPressed: () { fileUpload(
-                        context: context,
-                        files: (files) {
-                          value.setAnswer(
-                            questions: questions,
-                            value: files,
-                            index: index,
-                          );
-                        }
+                    onPressed: () fileUpload(
+                          context: context,
+                          files: (files) {
+                            value.setAnswer(
+                              questions: questions,
+                              value: files,
+                              index: index,
+                            );
+                          }),
                       
-                                          ),
-                                   Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (context) => this.widget));
-                    },
                                    
-                                  },
+                                 
                     child: Text(
                       "Upload",
                       style: TextStyle(
